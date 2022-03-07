@@ -2,7 +2,8 @@
 // the function below now only works with integers, change it to work with any type
 // also fill out the body
 
-public class Calculator {
+template <class T>
+class Calculator {
 private:
     int num1, num2;
 
@@ -12,10 +13,10 @@ public:
         num2 = n2;
     }
 
-    int add() { return 0; /*your code here*/ }
-    int subtract() { /*your code here*/ }
-    int multiply() { /*your code here*/ }
-    int divide() { /*your code here*/ }
+    int add() { return num1+num2; }
+    int subtract() { return num1-num2; }
+    int multiply() { return num1*num2; }
+    int divide() { return num1/num2; }
 };
 
 
